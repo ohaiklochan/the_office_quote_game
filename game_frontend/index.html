@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>The Office Quote Game!</title>
+        <meta name="description" content="The Office Quote Game: A Javascript/Rails Project">
+        <meta name="author" content="Chloe F. Steffens">
+
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>The Office Quote Game</h1><br>
+            <h3>Do you think you know who said what?</h3>
+        </div>
+
+        <div class="subheader">
+            <p>Enter your name and let's get guessing!</p>
+        </div>
+
+        <div class="container">
+            <div class="show" id="user_form_container">
+                <form id="user_form" action="index.html">
+                    <input type="text" id="user_name" placeholder="What Shall We Call You?">
+                    <input type="submit" style="display: none">
+                </form>
+            </div>
+          
+            <div class='hide' id="game_window">
+                <div class="hide" id="score_card"></div>
+                <div class="hide" id="question_container"></div>
+                <div class='hide' id="welcome">
+                    <h2 id='welcome_greeting'></h2>
+                    <p id='welcome_instructions'> Are you ready? Let's see how many quotes you know!</p><br>
+                <button id="go">Go!</button>
+            </div>
+        </div>
+
+        <div class="hide" id="end_of_game_message">
+            <p id='parting_message'>OOOH SORRY! Wrong answer! Better luck next time!</p><br>
+            <img src="https://i.pinimg.com/originals/f8/7a/3d/f87a3de62753e81e45ff8e04c2404c7e.gif" alt="kevin_laughing"><br></div>
+            <button id="to_hiscores">View Hi-Scores!</button>
+          </div>
+      
+          <div class="hide" id="hiscores">
+            <button id="play_again">Play Again!</button>
+          </div>
+      
+        </div>
+        <script src="src/game.js"></script>
+        <script src="src/user.js"></script>
+        <script src="src/question.js"></script>
+        <script src="src/answer.js"></script>
+        <script src="src/index.js"></script>
+    </body>
+</html>

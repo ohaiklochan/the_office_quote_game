@@ -1,0 +1,54 @@
+body {
+    background-color: #000000;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hide {
+    display: none
+}
+
+.show {
+    display: inline-flex;
+}
+
+.header {
+    margin: auto;
+    text-align: center;
+    font-family: "ITC American Typewriter Std Medium", "Courier New", monospace;
+    width: 60%;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: #493e35;
+}
+
+.subheader {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    border-right: 3px solid rgb(255, 255, 255);
+    border-left: 3px solid rgb(255, 255, 255);
+    background-color: #634a39;
+}
+
+.container {
+    /* display: inline-flex; */
+    justify-content: center;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: #868b84;
+    margin: auto;
+    width: 60%;
+    height: 100%;
+}
+
+#score_card {
+    padding: 10px;
+    border-right: 3px solid rgb(255, 255, 255);
+}
+
+
+
+#question_container, #end_of_game_message, #welcome, #user_form_container, #hiscores {
+    padding: 10px;
+    flex-direction: column;
+}
