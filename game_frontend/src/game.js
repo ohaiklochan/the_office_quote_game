@@ -90,7 +90,7 @@ class Game {
         })
     }
 
-    listenForRestart() {
+    restart() {
         restartBtn.addEventListener('click', (e) => {
             e.preventDefault()
             User.toggleHiScores()
@@ -99,7 +99,7 @@ class Game {
         })
     }
 
-    listenForHints() {
+    hints() {
         const hintBtns = document.querySelectorAll('#hint')
 
         for(const btn of hintBtns) {
