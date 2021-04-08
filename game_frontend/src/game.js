@@ -99,18 +99,6 @@ class Game {
         })
     }
 
-    hints() {
-        const hintBtns = document.querySelectorAll('#hint')
-
-        for(const btn of hintBtns) {
-            const hintDiv = btn.parentElement.querySelector('div')
-            btn.addEventListener('click', (e) => {
-                e.preventDefault()
-                this.toggleHintDiv(hintDiv)
-            })
-        }
-    }
-
     switchQuestionDivs() {
         let i = this.indexOfCurrentQuestion()
 
@@ -150,10 +138,6 @@ class Game {
 
     toggleEndOfGameMessage() {
         endGameDiv.getAttribute('class') === 'hide' ? endGameDiv.setAttribute('class', 'show') : endGameDiv.setAttribute('class', 'hide')
-    }
-
-    toggleHintDiv(hintDiv) {
-        hintDiv.getAttribute('class') === 'hide' ? hintDiv.setAttribute('class', 'show') : hintDiv.setAttribute('class', 'hide')
     }
 
 }
