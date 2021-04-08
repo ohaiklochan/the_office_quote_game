@@ -14,6 +14,6 @@ const hiScoresBtn = endGameDiv.querySelector('#to_hiscores')
 let newGame = new Game
 
 User.userFormSubmit(newGame)
-newGame.listenForStart()
-newGame.listenForHiScores()
-newGame.listenForRestart()
+newGame.start()
+newGame.hiScores()
+newGame.restart()

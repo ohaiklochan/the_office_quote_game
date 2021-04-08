@@ -70,18 +70,18 @@ class Game {
         this.toggleEndOfGameMessage()
     }
 
-    listenForStart() {
+    start() {
         startBtn.addEventListener('click', this.startGame.bind(this))
     }
 
-    listenForSubmits() {
+    submits() {
         const answerForms = document.querySelectorAll('#answer-form')
         for (const form of answerForms) {
             form.addEventListener('submit', this.evaluateAnswer.bind(this))
         }
     }
 
-    listenForHiScores() {
+    hiScores() {
         hiScoresBtn.addEventListener('click', (e) => {
             e.preventDefault()
             this.user.toggleScoreCard()
