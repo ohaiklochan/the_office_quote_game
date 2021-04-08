@@ -28,7 +28,7 @@ class Game {
 
     showFirstQuestion() {
         const firstQuestion = Question.all[0]
-        const questionDiv = toggleQuestionContainer.querySelectoryAll('div')
+        const questionDiv = questionContainer.querySelectoryAll('div')
         for(let div of questionDiv) {
             if(div.getAttribute('id') === `question-${firstQuestion.id}-div`) {
                 div.setAttribute('class', 'show')
