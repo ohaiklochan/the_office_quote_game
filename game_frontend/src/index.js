@@ -8,7 +8,7 @@ const hiScoresDiv = document.querySelector('#hiscores')
 const gameWindow = document.getElementById('game_window')
 
 const startBtn = welcome.querySelector('#go')
-const restartBtn = hiScoresDiv.querySelector('#start_over')
+const restartBtn = hiScoresDiv.querySelector('#play_again')
 const hiScoresBtn = endGameDiv.querySelector('#to_hiscores')
 
 let newGame = new Game
