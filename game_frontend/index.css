@@ -25,6 +25,7 @@ body {
 .subheader {
     margin: auto;
     text-align: center;
+    font-family: "ITC American Typewriter Std Medium", "Courier New", monospace;
     width: 60%;
     border-right: 3px solid rgb(255, 255, 255);
     border-left: 3px solid rgb(255, 255, 255);
@@ -51,4 +52,5 @@ body {
 #question_container, #end_of_game_message, #welcome, #user_form_container, #hiscores {
     padding: 10px;
     flex-direction: column;
+    font-family: "ITC American Typewriter Std Medium", "Courier New", monospace;
 }
