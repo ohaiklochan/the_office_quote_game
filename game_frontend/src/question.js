@@ -26,7 +26,7 @@ class Question {
             .then(questions => {
                 Question.createQuestions(questions.data)
                 Question.renderQuestions()
-                this.listenForSubmits()
+                this.submits()
             })
             .catch(error => Question.serverError(error))
     }
