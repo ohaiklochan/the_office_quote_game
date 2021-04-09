@@ -37,10 +37,11 @@ class Game {
     }
 
     evaluateAnswer(e) {
-        const form = e.target
-        const formRadios = form.querySelectoryAll('#radio')
-
         e.preventDefault()
+        const form = e.target
+        const formRadios = form.querySelectorAll('#radio')
+
+        
         for (let radio of formRadios) {
             if(!!radio.checked) {
                 let answer = Answer.all.find(a => a.id === radio.value)
