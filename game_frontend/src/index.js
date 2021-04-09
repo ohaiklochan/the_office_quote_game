@@ -16,4 +16,4 @@ let newGame = new Game
 User.userFormSubmit(newGame)
 newGame.start()
 newGame.hiScores()
-// newGame.restart()
+newGame.restart()
