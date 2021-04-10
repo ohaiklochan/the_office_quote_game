@@ -33,14 +33,13 @@ body {
 }
 
 .container {
-    /* display: inline-flex; */
     justify-content: center;
     border: 3px solid rgb(255, 255, 255);
     background-color: #868b84;
-    margin: 0 auto;
+    margin: auto;
     width: 60%;
     height: 100%;
-    vertical-align: middle;
+    text-align: center;
 }
 
 #score_card {
