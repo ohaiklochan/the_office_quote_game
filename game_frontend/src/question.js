@@ -9,6 +9,7 @@ class Question {
 
     static all = []
 
+    // what happens before the game starts
     shuffleAnswers() {
         let currentIndex = this.answers.length, temporaryValue, randomIndex
         while (0 !== currentIndex) {
@@ -56,6 +57,7 @@ class Question {
         }
     }
 
+    // while game is going, this renders the next question
     static clearQuestionContainer() {
         questionContainer.innerHTML = ''
     }
