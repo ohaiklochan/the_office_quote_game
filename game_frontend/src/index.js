@@ -13,7 +13,7 @@ const restartBtn = hiScoresDiv.querySelector('#play_again')
 const hiScoresBtn = endGameDiv.querySelector('#to_hiscores')
 
 // initialize the game
-let newGame = new Game
+const newGame = new Game
 
 // listeners
 User.userFormSubmit(newGame)
