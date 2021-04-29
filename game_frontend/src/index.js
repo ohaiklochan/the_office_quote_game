@@ -16,6 +16,19 @@ const hiScoresBtn = endGameDiv.querySelector('#to_hiscores')
 const newGame = new Game
 
 // listeners
+const headerClick = document.querySelector('h1')
+
+headerClick.addEventListener('click', showTopScore)
+
+function showTopScore() {
+    fetch(`${BASE_URL}/hiscores`)
+    .then(resp => resp.json())
+    .then(topUser => {
+        console.log(topUser.data[0].attributes.name)
+    })
+    alert(`This user has the top score: ${user.name}`)
+}
+
 User.userFormSubmit(newGame)
 newGame.start()
 newGame.hiScores()
